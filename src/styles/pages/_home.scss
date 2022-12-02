@@ -62,9 +62,9 @@
   }
   @media screen and (max-width:580px){
     .homeContent {
-    //   &:after {
-    //   background: url('') no-repeat 60% 50%/cover !important;
-    //   }
+      &:after {
+      background: url('../../media/images.jpg') no-repeat 60% 50%/cover !important;
+      }
       h1 {
         font-size: 3rem !important;
       }

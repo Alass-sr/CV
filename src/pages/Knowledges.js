@@ -1,11 +1,20 @@
 import React from 'react'
+import Experience from '../components/knowledges/Experience'
+import Hobbies from '../components/knowledges/Hobbies'
+import Languages from '../components/knowledges/Languages'
+import OtherSkills from '../components/knowledges/OtherSkills'
 import Navigation from '../components/Navigation'
 
 export default function Knowledges() {
   return (
-    <div>
+    <div className='knowledges'>
       <Navigation />
-        <h1> Hello ici Knowledges  </h1>
+        <div className='knowledgesContent'>
+          <Languages />
+          <Experience />
+          <OtherSkills />
+          <Hobbies />
+        </div>
     </div>
   )
 }
