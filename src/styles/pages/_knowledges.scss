@@ -3,7 +3,7 @@
         min-width: $minHeight;
         width: 100%;
         position: relative;
-        overflow: hidden;
+        // overflow: hidden;
         display: grid;
         grid-template-columns: 38% 1fr 1fr;
         grid-template-rows: 70% 30%;
@@ -11,11 +11,14 @@
         "L E E"
         "O O H";
 
+        
+
         .languagesFrameworks, .experience, .otherSkills, .hobbies
         {
             background: $color-2;
             border-radius: $borderRadius;
             padding: .8rem;
+            background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
         }
         h3 {
             font-size: 1.4rem;
@@ -75,7 +78,7 @@
             padding-top: .4rem;
 
             li {
-                color: $color-1
+                color: $color-5
             }
 
             .progressBar {
@@ -128,11 +131,13 @@
             p {
               text-align: justify;
               padding: 0 1rem;
+              color: $color-5;
             }
             .exp-1 {
               grid-area: 2;
             }
             .exp-2 {
+              margin-top: 20px;
               grid-area: 3;
             }
           }
@@ -173,6 +178,7 @@
                 span {
                   position: absolute;
                   transform: translateX(2.2rem);
+                  color: $color-5;
                 }
               }
             }

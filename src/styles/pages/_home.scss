@@ -1,7 +1,10 @@
 .home {
-
+      
     .homeContent {
-      background: linear-gradient(115deg, $color-1 50%, transparent 100%);
+      // background: linear-gradient(115deg, $color-1 50%, transparent 100%);
+      // background-image: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
+      background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+
       min-height: $minHeight;
       width: 100%;
       min-height: 500px;
@@ -14,7 +17,7 @@
         position: absolute;
         height: 100%;
         width: inherit;
-        background: url('../../media/images.jpg') no-repeat center/cover;
+        // background: url('../../media/images.jpg') no-repeat center/cover;
         z-index: -1;
         // filter: brightness(30%);
       }
@@ -25,30 +28,31 @@
         left: 13%;
         font-family: $font-1;
   
-        h1 {
-          font-size: 5rem;
-          font-family: $font-3;
-          color: $color-5;
-          text-transform: uppercase;
-          text-shadow: 3px 6px 2px $black;
-        }
+        // h1 {
+        //   font-size: 5rem;
+        //   font-family: $font-3;
+        //   color: $color-5;
+        //   text-transform: uppercase;
+        //   text-shadow: 3px 6px 2px $black;
+        // }
         h2 {
           font-size: 2.5rem;
           padding: 1.5rem 0 7rem;
-          color: $color-3;
+          color: $color-5;
           text-shadow: 1px 4px 1px $black;
         }
         .pdf {
           a {
             font-size: 1.5rem;
-            background: $color-3;
+            background: $color-5;
             padding: 1rem 2rem;
             border-radius: $borderRadius;
             box-shadow: 0 5px 1px rgb(15, 15, 15);
             transition: 0.2s ease;
   
             &:hover {
-              background: $color-4;
+              background: #ffd700;
+              transition: 2s;;
             }
           }
         }
