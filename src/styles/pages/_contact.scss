@@ -1,5 +1,7 @@
 .contactContent {
-    background: $color-3;
+    // background: $color-3;
+    background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+      // grid-area: 3;
     border-radius: $borderRadius;
     width: 100%;
     overflow: hidden;
@@ -15,26 +17,26 @@
       grid-area: 1;
       width: 100%;
       position: relative;
-      background: $color-1;
+      // background: $black;
       height: 340px;
   
-      &:before {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: url(../../media/map.jpg) no-repeat center top/cover;
-        filter: grayscale(100%);
-      }
-      &:after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 30px;
-        // background: url(../../media/shape.svg) no-repeat center /cover;
+      // &:before {
+      //   content: '';
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   background: url(../../media/map.jpg) no-repeat center top/cover;
+      //   filter: grayscale(100%);
+      // }
+      // &:after {
+      //   content: '';
+      //   width: 100%;
+      //   height: 100%;
+      //   position: absolute;
+      //   top: 30px;
+      //   // background: url(../../media/shape.svg) no-repeat center /cover;
         
-      }
+      //  }
     }
     .contactBox {
       grid-area: 2;
@@ -52,7 +54,7 @@
         text-align: center;
         margin-top: 0.3rem;
         position: relative;
-        color: $color-2;
+        // color: $color-2;
   
         &:after {
           content: '';
@@ -79,7 +81,7 @@
           font-size: 1.4rem;
           position: absolute;
           transform: translateY(2px);
-          color: $color-2;
+          // color: $color-2;
         }
         span {
           font-size: 1.4rem;
@@ -98,7 +100,8 @@
       }
     }
     .socialNetwork {
-      grid-area: 3;
+      // background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+      // grid-area: 3;
       @include verticalCenter;
   
       ul {
@@ -121,11 +124,13 @@
           transition: scale .1s;
   
           &:hover {
-            background: $color-4;
+            // background: $color-3;
+            background: #fdd700;
+            transition: 2s ease;  
           }
   
           i {
-            color: $color-2;
+            // color: $color-2;
             margin-top: .3rem;
           }
         }
